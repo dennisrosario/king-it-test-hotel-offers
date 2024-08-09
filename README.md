@@ -27,7 +27,10 @@ This is a Next.js application for displaying hotel offers, containerized using D
    cd king-it-test-hotel-offers
    ```
 
-2. Ensure your `docker-compose.yml` file is properly configured with necessary environment variables for your application.
+2. Configuring environment
+   ```bash
+   cp .env.example .env
+   ```
 
 ## Running the Application
 
@@ -66,16 +69,6 @@ docker-compose build
 ## Environment Variables
 
 Make sure to set up the necessary environment variables in your `docker-compose.yml` or through an `.env` file as needed for your application to run correctly.
-
-For example:
-```yaml
-services:
-  web:
-    environment:
-      - NEXT_PUBLIC_MONGODB_URI=your_mongodb_connection_string  # Replace with your MongoDB connection string
-```
-
-Replace `your_mongodb_connection_string` with your actual MongoDB connection string from MongoDB Atlas.
 
 ## License
 
